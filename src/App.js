@@ -11,7 +11,7 @@ import InvoiceDetail from "./component/dashbord/InvoiceDetail";
 
 function App() {
   const myrouter = createBrowserRouter([
-    { path: " ", Component: Login },
+    { path: "/", Component: Login },
     { path: "/Login", Component: Login },
     { path: "/Register", Component: Register },
     {
