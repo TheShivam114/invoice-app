@@ -11,14 +11,14 @@ import InvoiceDetail from "./component/dashbord/InvoiceDetail";
 
 function App() {
   const myrouter = createBrowserRouter([
-    { path: "/dashbord", Component: dashbord },
+    { path: "/", Component: dashbord },
     { path: "/Login", Component: Login },
     { path: "/Register", Component: Register },
     {
       path: "/dashbord",
       Component: dashbord,
       children: [
-        { path: "", Component: Home },
+        { path: "", Component: dashbord },
         { path: "home", Component: Home },
         { path: "invoices", Component: Invoices },
         { path: "new-invoice", Component: NewInvoice },
